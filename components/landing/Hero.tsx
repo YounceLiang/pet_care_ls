@@ -34,20 +34,6 @@ export function Hero({ onOpenBooking }: { onOpenBooking: () => void }) {
               </a>
             </div>
 
-            <div className="mt-7 grid gap-3 sm:grid-cols-3" role="list" aria-label="门店亮点">
-              <div className="panel p-4" role="listitem">
-                <strong className="block text-sm">45–90 分钟</strong>
-                <span className="text-xs text-muted">标准洗护时长</span>
-              </div>
-              <div className="panel p-4" role="listitem">
-                <strong className="block text-sm">独立烘干区</strong>
-                <span className="text-xs text-muted">减少交叉影响</span>
-              </div>
-              <div className="panel p-4" role="listitem">
-                <strong className="block text-sm">可选透明记录</strong>
-                <span className="text-xs text-muted">洗护过程更放心</span>
-              </div>
-            </div>
           </div>
 
           <aside className="card" aria-label="门店信息卡片">
