@@ -6,6 +6,7 @@ import { useClipboard } from "./useClipboard";
 import { useToast } from "../ui/toast";
 import { BookingForm } from "./BookingForm";
 import { EnvCarousel } from "./EnvCarousel";
+import { ReviewsCarousel } from "./ReviewsCarousel";
 
 export function Sections({
   onOpenBooking,
@@ -143,20 +144,11 @@ export function Sections({
         <div className="container">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight">顾客评价</h2>
-            <p className="mt-2 text-sm text-muted">以下为示例文案，可替换为真实平台截图/内容。</p>
+            <p className="mt-2 text-sm text-muted">可替换为真实平台评价；支持自动轮播与手动切换。</p>
           </div>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            {[
-              { who: "团子妈", text: "洗得很干净，吹干也很耐心，结束后毛毛超蓬松。" },
-              { who: "豆包爸", text: "店里很干净，流程透明，沟通很细致，推荐！" },
-              { who: "奶酪铲屎官", text: "皮肤护理做得很温和，第二天抓挠明显少了。" }
-            ].map((r) => (
-              <div key={r.who} className="card">
-                <p className="text-sm text-muted">“{r.text}”</p>
-                <div className="mt-3 text-sm font-semibold">{r.who}</div>
-              </div>
-            ))}
+          <div className="mt-6">
+            <ReviewsCarousel />
           </div>
         </div>
       </section>
@@ -272,4 +264,3 @@ export function Sections({
     </>
   );
 }
-
