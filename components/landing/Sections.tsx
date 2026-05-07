@@ -198,7 +198,7 @@ export function Sections({
             </button>
           </div>
 
-          <div className="mt-6 grid gap-4 lg:grid-cols-2">
+          <div className="mt-6 grid gap-4">
             <div className="card" aria-label="联系信息">
               <h3 className="text-base font-semibold">门店信息</h3>
               <p className="mt-2 text-sm text-muted">
@@ -228,25 +228,27 @@ export function Sections({
                   复制地址
                 </button>
               </div>
+            </div>
 
-              <div className="mt-4">
-                <div className="panel overflow-hidden">
-                  <div className="relative aspect-[16/9] w-full">
+            <div className="card p-0" aria-label="门店地图">
+              <div className="panel overflow-hidden rounded-[inherit]">
+                <div className="relative w-full bg-black/10">
+                  <div className="relative h-[280px] w-full sm:h-[320px] md:h-[420px] lg:h-[520px]">
                     <Image
                       src="/assets/store-map-ai.png"
                       alt="门店位置示意图：上海市宜川路街道陕西北路1620号（靠近昌平路路口）"
                       fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 520px"
+                      className="object-contain"
+                      sizes="100vw"
                     />
                   </div>
-                  <div className="flex items-center justify-between gap-3 p-4">
-                    <div>
-                      <strong className="block text-sm">地图位置</strong>
-                      <div className="text-xs text-muted">上海市宜川路街道 陕西北路 1620 号（示意图）</div>
-                    </div>
-                    <span className="chip">已标注</span>
+                </div>
+                <div className="flex items-center justify-between gap-3 p-4">
+                  <div>
+                    <strong className="block text-sm">地图位置</strong>
+                    <div className="text-xs text-muted">上海市宜川路街道 陕西北路 1620 号（示意图）</div>
                   </div>
+                  <span className="chip">已标注</span>
                 </div>
               </div>
             </div>
