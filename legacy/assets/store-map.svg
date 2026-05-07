@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">沐爪宠物洗护 · 门店位置示意图</title>
+  <desc id="desc">清新可爱的简化地图，标注门店位于上海市宜川路街道陕西北路1620号，靠近昌平路路口。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4fffb" />
+      <stop offset="1" stop-color="#f7f6ff" />
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dbe7ff" />
+      <stop offset="1" stop-color="#cfefff" />
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0b1b2b" flood-opacity="0.18" />
+    </filter>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#7c5cff" flood-opacity="0.25" />
+    </filter>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#8aa3b01f" />
+    </pattern>
+    <style>
+      .label{font: 600 18px/1.1 ui-sans-serif, system-ui, -apple-system, "PingFang SC", "Microsoft YaHei";}
+      .small{font: 600 14px/1.1 ui-sans-serif, system-ui, -apple-system, "PingFang SC", "Microsoft YaHei";}
+      .tiny{font: 500 12px/1.2 ui-sans-serif, system-ui, -apple-system, "PingFang SC", "Microsoft YaHei";}
+      .muted{fill:#4b6370;}
+      .strokeMuted{stroke:#4b6370;}
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)" />
+  <rect width="1200" height="700" fill="url(#dots)" opacity="0.75" />
+
+  <!-- Parks / green areas -->
+  <path d="M70,120 C160,60 270,70 340,130 C410,190 520,200 600,145 C690,80 820,80 920,150 C1000,210 1110,210 1160,150 L1160,330 C1080,360 1000,350 930,310 C850,270 740,280 650,340 C570,395 460,410 380,360 C300,310 190,300 70,350 Z"
+        fill="#dff9ef" opacity="0.9"/>
+  <path d="M120,430 C220,370 340,380 420,450 C510,530 620,540 720,480 C820,420 960,430 1080,510 L1080,680 L120,680 Z"
+        fill="#e6fbf3" opacity="0.9"/>
+
+  <!-- Main roads -->
+  <g opacity="0.98">
+    <!-- 陕西北路 (vertical) -->
+    <path d="M720 40 C705 160 705 260 720 360 C740 490 740 570 724 680"
+          fill="none" stroke="url(#road)" stroke-width="84" stroke-linecap="round" />
+    <path d="M720 40 C705 160 705 260 720 360 C740 490 740 570 724 680"
+          fill="none" stroke="#ffffff" stroke-width="56" stroke-linecap="round" opacity="0.75"/>
+
+    <!-- 昌平路 (horizontal) -->
+    <path d="M60 290 C240 260 410 260 590 290 C760 318 940 322 1140 290"
+          fill="none" stroke="url(#road)" stroke-width="76" stroke-linecap="round" />
+    <path d="M60 290 C240 260 410 260 590 290 C760 318 940 322 1140 290"
+          fill="none" stroke="#ffffff" stroke-width="50" stroke-linecap="round" opacity="0.78"/>
+
+    <!-- 康定路 (lower right, diagonal-ish) -->
+    <path d="M820 520 C930 500 1030 500 1140 540"
+          fill="none" stroke="url(#road)" stroke-width="58" stroke-linecap="round" />
+    <path d="M820 520 C930 500 1030 500 1140 540"
+          fill="none" stroke="#ffffff" stroke-width="38" stroke-linecap="round" opacity="0.78"/>
+
+    <!-- 支路 -->
+    <path d="M420 170 C500 210 580 210 660 170" fill="none" stroke="#d6e7ff" stroke-width="44" stroke-linecap="round" opacity="0.9"/>
+    <path d="M420 170 C500 210 580 210 660 170" fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="round" opacity="0.78"/>
+
+    <path d="M310 420 C420 420 520 440 620 480" fill="none" stroke="#d6e7ff" stroke-width="44" stroke-linecap="round" opacity="0.9"/>
+    <path d="M310 420 C420 420 520 440 620 480" fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="round" opacity="0.78"/>
+  </g>
+
+  <!-- Road labels -->
+  <g fill="#34505c" opacity="0.95">
+    <g transform="translate(740 110) rotate(90)">
+      <text class="label">陕西北路</text>
+    </g>
+    <g transform="translate(210 270) rotate(-6)">
+      <text class="label">昌平路</text>
+    </g>
+    <g transform="translate(930 548) rotate(-8)">
+      <text class="small">康定路</text>
+    </g>
+  </g>
+
+  <!-- Blocks / buildings -->
+  <g opacity="0.98">
+    <g fill="#fff7d8" stroke="#e7d9a7" stroke-width="2">
+      <rect x="120" y="210" rx="18" ry="18" width="190" height="130" />
+      <rect x="330" y="230" rx="18" ry="18" width="210" height="120" />
+      <rect x="150" y="460" rx="18" ry="18" width="240" height="140" />
+      <rect x="420" y="470" rx="18" ry="18" width="210" height="120" />
+      <rect x="860" y="170" rx="18" ry="18" width="250" height="140" />
+      <rect x="885" y="360" rx="18" ry="18" width="250" height="140" />
+    </g>
+
+    <g fill="#e9f3ff" stroke="#cfe2ff" stroke-width="2">
+      <rect x="600" y="120" rx="18" ry="18" width="150" height="110" />
+      <rect x="560" y="420" rx="18" ry="18" width="160" height="120" />
+      <rect x="735" y="420" rx="18" ry="18" width="140" height="110" />
+    </g>
+  </g>
+
+  <!-- Cute paw prints -->
+  <g fill="#7c5cff" opacity="0.18">
+    <path d="M255 170c10 0 18 8 18 18s-8 18-18 18-18-8-18-18 8-18 18-18Zm-38 20c7 0 12 6 12 12s-5 12-12 12-12-6-12-12 5-12 12-12Zm76 0c7 0 12 6 12 12s-5 12-12 12-12-6-12-12 5-12 12-12Zm-43 34c18 0 32 10 36 24 2 7-3 15-11 16-9 1-16 4-25 4s-16-3-25-4c-8-1-13-9-11-16 4-14 18-24 36-24Z"/>
+    <path d="M990 120c10 0 18 8 18 18s-8 18-18 18-18-8-18-18 8-18 18-18Zm-38 20c7 0 12 6 12 12s-5 12-12 12-12-6-12-12 5-12 12-12Zm76 0c7 0 12 6 12 12s-5 12-12 12-12-6-12-12 5-12 12-12Zm-43 34c18 0 32 10 36 24 2 7-3 15-11 16-9 1-16 4-25 4s-16-3-25-4c-8-1-13-9-11-16 4-14 18-24 36-24Z"/>
+  </g>
+
+  <!-- Store marker (near 陕西北路 & 昌平路) -->
+  <g filter="url(#softShadow)">
+    <g filter="url(#glow)">
+      <path d="M720 330c0-34 28-62 62-62s62 28 62 62c0 46-56 102-60 106a6 6 0 0 1-8 0c-4-4-56-60-56-106Z"
+            fill="#7c5cff"/>
+      <circle cx="782" cy="330" r="26" fill="#ffffff" opacity="0.95"/>
+      <path d="M782 318c10 0 17 6 20 12 2 5-1 10-6 11-5 1-10 3-14 3s-9-2-14-3c-5-1-8-6-6-11 3-6 10-12 20-12Z"
+            fill="#7c5cff" opacity="0.9"/>
+      <circle cx="770" cy="332" r="6" fill="#7c5cff" opacity="0.9"/>
+      <circle cx="794" cy="332" r="6" fill="#7c5cff" opacity="0.9"/>
+    </g>
+
+    <!-- Bubble card -->
+    <g transform="translate(540 360)">
+      <rect x="0" y="0" width="430" height="150" rx="26" ry="26" fill="#ffffff" opacity="0.96"/>
+      <rect x="0" y="0" width="430" height="150" rx="26" ry="26" fill="none" stroke="#cfe2ff" stroke-width="2"/>
+      <path d="M210 150l22 0c-10 16-26 30-34 46-6-18-10-32-20-46h32Z" fill="#ffffff" opacity="0.96"/>
+      <g transform="translate(22 26)">
+        <text class="label" fill="#1d2f39">沐爪宠物洗护</text>
+        <text class="tiny muted" x="0" y="34">📍 上海市宜川路街道 陕西北路 1620 号</text>
+        <text class="tiny muted" x="0" y="58">（示意：靠近昌平路路口）</text>
+        <g transform="translate(0 82)">
+          <rect x="0" y="0" width="132" height="34" rx="999" fill="#eef4ff" stroke="#d7e6ff"/>
+          <text class="small" x="18" y="23" fill="#36515d">到店路线</text>
+          <g transform="translate(160 0)">
+            <rect x="0" y="0" width="224" height="34" rx="999" fill="#f2f0ff" stroke="#e0dcff"/>
+            <text class="small" x="18" y="23" fill="#36515d">导航：陕西北路1620号</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Small compass -->
+  <g transform="translate(1048 60)" opacity="0.85">
+    <circle cx="0" cy="0" r="34" fill="#ffffff" stroke="#cfe2ff" stroke-width="2"/>
+    <path d="M0-18 L8 0 L0 18 L-8 0 Z" fill="#29d6c6" opacity="0.85"/>
+    <text class="tiny" x="-6" y="-40" fill="#34505c">N</text>
+  </g>
+
+  <!-- Footer tip -->
+  <g opacity="0.9">
+    <rect x="36" y="620" width="420" height="52" rx="18" fill="#ffffff" opacity="0.88" />
+    <rect x="36" y="620" width="420" height="52" rx="18" fill="none" stroke="#d7e6ff" />
+    <text class="tiny muted" x="56" y="652">提示：这是“可爱清新风”的示意图，可用于官网展示门店位置。</text>
+  </g>
+</svg>

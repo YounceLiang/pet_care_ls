@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #0b1220;
+    --panel: rgba(255, 255, 255, 0.06);
+    --panel-2: rgba(255, 255, 255, 0.1);
+    --text: rgba(255, 255, 255, 0.92);
+    --muted: rgba(255, 255, 255, 0.7);
+    --faint: rgba(255, 255, 255, 0.55);
+    --brand: #7c5cff;
+    --brand-2: #29d6c6;
+    --good: #2fe27f;
+    --warn: #ffd36e;
+    --bad: #ff6e6e;
+    --shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+    --ring: 0 0 0 4px rgba(124, 92, 255, 0.25);
+    --radius: 18px;
+    --radius-2: 26px;
+    --max: 1120px;
+    --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, PingFang SC,
+      Hiragino Sans GB, "Microsoft YaHei", "Noto Sans CJK SC", "Noto Sans SC", Arial,
+      "Apple Color Emoji", "Segoe UI Emoji";
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font);
+    color: var(--text);
+    background:
+      radial-gradient(1200px 650px at 12% 0%, rgba(124, 92, 255, 0.35), transparent 62%),
+      radial-gradient(1000px 650px at 90% 10%, rgba(41, 214, 198, 0.25), transparent 60%),
+      radial-gradient(900px 560px at 45% 100%, rgba(255, 211, 110, 0.14), transparent 55%),
+      linear-gradient(180deg, #070b14, var(--bg) 22%, #070b14);
+    overflow-x: hidden;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto w-full max-w-[1120px] px-5;
+  }
+
+  .panel {
+    @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md;
+  }
+
+  .card {
+    @apply panel p-5 shadow-card;
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-muted;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-3 text-sm font-semibold text-text transition;
+  }
+
+  .btn:hover {
+    @apply bg-white/10;
+  }
+
+  .btn:focus-visible {
+    outline: none;
+    box-shadow: var(--ring);
+  }
+
+  .btn-primary {
+    border-color: rgba(124, 92, 255, 0.35);
+    background: rgba(124, 92, 255, 0.18);
+  }
+
+  .btn-primary:hover {
+    background: rgba(124, 92, 255, 0.24);
+  }
+
+  .input {
+    @apply mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-text outline-none placeholder:text-white/35;
+  }
+
+  .input:focus-visible {
+    box-shadow: var(--ring);
+  }
+}
