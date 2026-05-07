@@ -14,11 +14,20 @@ type FormState = {
   note: string;
 };
 
+
+const getTomorrowAtTen = () => {
+  const d = new Date();
+  d.setDate(d.getDate() + 1);
+  d.setHours(10, 0, 0, 0);
+  const pad = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+};
+
 const defaultState: FormState = {
   petType: "",
   size: "",
   service: "",
-  time: "",
+  time: getTomorrowAtTen(),
   contact: "",
   petName: "",
   note: ""
