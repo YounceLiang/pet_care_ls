@@ -62,10 +62,6 @@ export function Hero({ onOpenBooking }: { onOpenBooking: () => void }) {
                 <b className="text-text">周六至周日</b>
                 <span>09:30 – 21:00</span>
               </div>
-              <div className="flex items-center justify-between gap-4">
-                <b className="text-text">节假日</b>
-                <span>以公众号为准</span>
-              </div>
             </div>
 
             <div className="my-4 h-px w-full bg-white/10" aria-hidden="true" />
